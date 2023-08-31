@@ -3,16 +3,23 @@ using namespace std;
 
 int main(){
 
-        double sales = 95000;
+        
         const double salesTax = .04;
         const double countyTax = .02;
+        
 
-            cout << "Sales $" << sales << endl;
+        cout << "Enter the total amount of sales: ";
+        double sales; 
+        cin >> sales ;
+
         double totalSalesTax = sales * salesTax;
-            cout << "Sales Tax $" << totalSalesTax << endl;
         double totalCountyTax = sales * countyTax;
-            cout << "County Tax $" << countyTax << endl;
+        double totalNet = sales - totalSalesTax - totalCountyTax;
 
+        cout << "Sales $" << sales << endl;  
+        cout << "Sales Tax $" << totalSalesTax << endl;
+        cout << "County Tax $" << totalCountyTax << endl;
+        cout << "Total net sales: $" << totalNet << endl;
 
     return 0;
 }
