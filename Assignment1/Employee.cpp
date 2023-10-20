@@ -14,11 +14,11 @@ int main(){
     Address A;
     Employee e;
 
-    cout << "Employee e: " << endl;
+    cout << "\nEmployee e: " << endl;
     e.printEmployee();
 
     Name n1("George", "Victor", "Meghabghab");
-    Address a1("903 S. Germantown Blvd", "Chattanooga", "CA", "12345");
+    Address a1("603 S. Germantown Rd", "Chattanooga", "TN", "37411");
     string ssn1 = "987-65-4321";
     Employee e1(n1, a1, ssn1);
 
